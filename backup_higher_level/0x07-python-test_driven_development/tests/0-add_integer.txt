@@ -1,0 +1,42 @@
+# 0-add_integer.txt
+
+============================
+How to Use 0-add_integer.py
+============================
+
+This module is very simple, since it only has one function called
+``add_integer``. First import ``add_integer`` from the ``0-add_integer module:
+
+	>>> add_integer = __import__('0-add_integer').add_integer
+
+Now use it:
+	
+	>>> add_integer(8, 2)
+	10
+	>>> add_integer(12.1, 4.2)
+	16
+	>>> add_integer(-1, -1)
+	-2
+	>>> add_integer(2)
+	100
+	>>> add_integer(-8)
+	90
+
+Errors:
+
+	>>> add_integer("school")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+	>>> add_integer(12, "b")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+	>>> add_integer(1, "2")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+	>>> add_integer("5")
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+	>>> add_integer()
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+

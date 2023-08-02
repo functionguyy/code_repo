@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# script that display Best School 10 times
+NUM=1
+until [ "$NUM" -gt "10" ]; do
+	echo "Best School"
+	((NUM=NUM+1))
+done
